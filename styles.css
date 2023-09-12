@@ -1,4 +1,7 @@
 /* styles.css */
+html {
+    scroll-behavior: smooth;
+  }
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -244,16 +247,127 @@ section {
     transform: scale(1.05); /* Voeg een schaalvergrotingseffect toe bij hover */
 }
 /* Voeg deze CSS toe voor de aanmeldknop */
+.aanmelden {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f0f0f0;
+}
+
+.aanmelden h2 {
+    font-size: 28px;
+    margin: 0 0 20px;
+}
+
+.aanmelden p {
+    font-size: 18px;
+    color: #555;
+    margin: 0 0 20px;
+}
+
 .aanmeld-button {
     display: inline-block;
-    background-color: #2add5d;
+    background-color: #333;
     color: white;
+    font-size: 20px;
     padding: 10px 20px;
-    text-decoration: none;
     border-radius: 5px;
+    text-decoration: none;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .aanmeld-button:hover {
-    background-color: #1faa4d;
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .aanmelden h2 {
+        font-size: 24px;
+    }
+
+    .aanmelden p {
+        font-size: 16px;
+    }
+
+    .aanmeld-button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aanmelden h2 {
+        font-size: 20px;
+    }
+
+    .aanmelden p {
+        font-size: 14px;
+    }
+
+    .aanmeld-button {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+}
+
+.docenten {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f0f0f0;
+}
+
+.docent-en-vak {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.docent-en-vak-item {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.docent-en-vak-item:hover {
+    transform: scale(1.05);
+}
+
+.docent-en-vak-item img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.info h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#subject-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.info div {
+    font-size: 16px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .docent-en-vak-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .docent-en-vak-item {
+        width: 100%;
+    }
+}
+.space-between{
+    padding: 40px;
 }
