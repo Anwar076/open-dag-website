@@ -27,6 +27,7 @@ h1 {
     font-size: 36px;
     margin-bottom: 20px;
     transition: font-size 0.3s ease-in-out;
+    padding-right: 580px;
 }
 
 h1:hover {
