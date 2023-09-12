@@ -1,0 +1,259 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2add5d;
+    color: white;
+    display: flex;
+    align-items: center; /* Verticaal centreren van de inhoud */
+    padding: 20px;
+    justify-content: space-between; /* Plaats de elementen aan beide uiteinden van de header */
+}
+
+img {
+    max-width: 100px; /* Pas de maximale breedte van de afbeelding aan naar wens */
+    margin-right: 10px; /* Voeg wat ruimte toe tussen de afbeelding en de tekst */
+}
+/* Voeg deze CSS toe voor een animatie op de header-tekst */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    transition: font-size 0.3s ease-in-out;
+}
+
+h1:hover {
+    font-size: 40px;
+}
+
+
+/* Stijl voor de knop om vakken te tonen/verbergen */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Stijl voor de vakkenlijst */
+/* Voeg deze CSS toe voor een animatie op de vakken */
+
+
+
+/* Stijl voor de lijstitems van vakken */
+/* Voeg deze CSS toe voor animatie op de vakken */
+.vakken {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.vakken-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creëer drie kolommen met gelijke breedte */
+    gap: 20px; /* Voeg wat ruimte toe tussen de vakken */
+}
+
+.vak-item {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.vak-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.vakken.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Voeg deze CSS toe voor een hover-effect op de vakkenitems */
+.vakken li:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.vakken li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.vakkenNaam{
+    text-align: center;
+}
+
+/* Voeg hier meer CSS-stijlen toe om je website verder te ontwerpen */
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Voeg een animatie toe aan de videocontainer */
+.video-container:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.space-between {
+    height: 20px; /* Voeg wat ruimte toe tussen header en video */
+}
+/* Voeg wat stijl toe aan de roostersectie */
+.rooster {
+    text-align: center; /* Centreer de inhoud horizontaal */
+    padding: 20px; /* Voeg wat ruimte toe rond de inhoud */
+}
+
+/* Stijl voor de roosterafbeelding */
+.rooster-image img {
+    max-width: 100%; /* Zorg ervoor dat de afbeelding nooit breder is dan zijn container */
+    height: auto; /* Behoud de aspectverhouding van de afbeelding */
+    border: 2px solid #ccc; /* Voeg een lichte rand toe aan de afbeelding */
+    border-radius: 5px; /* Voeg wat afgeronde hoeken toe aan de afbeelding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Voeg een lichte schaduw toe aan de afbeelding */
+    margin: 0 auto; /* Centreer de afbeelding horizontaal in zijn container */
+}
+
+/* Stijl voor de tekstbeschrijving van het rooster */
+.rooster p {
+    margin-top: 10px; /* Voeg wat ruimte toe tussen de afbeelding en de tekst */
+    font-size: 16px; /* Pas de lettergrootte aan voor leesbaarheid */
+}
+/* Voeg deze CSS toe voor stijl van het menu */
+.menu {
+    background-color: #333;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #2add5d;
+}
+
+
+/* Stijl voor de secties */
+section {
+    padding: 20px;
+}
+
+/* Voeg verdere stijlen toe aan de secties naar wens */
+/* Voeg deze CSS toe voor de sectie "De Indeling van de Blokken" */
+.blokindeling {
+    text-align: center; /* Centreer de inhoud horizontaal */
+    padding: 20px; /* Voeg wat ruimte toe rond de inhoud */
+}
+
+/* Stijl voor de blokkenlijst */
+.blokindeling h3 {
+    font-size: 24px; /* Pas de lettergrootte aan voor sectietitels */
+    margin-top: 20px; /* Voeg wat ruimte toe boven de titel */
+}
+
+/* Stijl voor de lijst van blokken */
+.blokindeling ul {
+    list-style: none; /* Verwijder standaard lijststijlen */
+    padding: 0; /* Verwijder standaard lijstvulling */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blokindeling ul li {
+    margin: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: calc(33.33% - 20px); /* Verdeel de blokken in 3 kolommen met wat ruimte ertussen */
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+.blokindeling p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+    align-items: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+
+.blokindeling ul li:hover {
+    transform: scale(1.05); /* Voeg een schaalvergrotingseffect toe bij hover */
+}
+/* Voeg deze CSS toe voor de aanmeldknop */
+.aanmeld-button {
+    display: inline-block;
+    background-color: #2add5d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.aanmeld-button:hover {
+    background-color: #1faa4d;
+}
